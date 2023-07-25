@@ -10,13 +10,19 @@ import UIKit
 class ViewController: UIViewController {
     
     //변수명이기때문에 앞문자는 소문자로 시작
+    //IBOut : Interface Builder Outlet
     @IBOutlet weak var mainLabel: UILabel!
     @IBOutlet weak var mainButton: UIButton!
     var status: Bool = false
     
+    // 앱의 화면에 들어오면 처음 실행시키는 함수
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        //반갑습니다를 방가방가라고 덮어씌워짐
+        //mainLabel.text = "방가방가"
+        mainLabel.backgroundColor = UIColor.blue
+        mainLabel.textColor = UIColor.white
     }
 
     @IBAction func buttonPressed(_ sender: UIButton) {
