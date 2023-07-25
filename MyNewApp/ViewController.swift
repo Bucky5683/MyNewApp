@@ -31,7 +31,8 @@ class ViewController: UIViewController {
             //색지정 #colorLiteral
             mainLabel.backgroundColor = #colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)
             mainLabel.textColor = UIColor.white
-            
+            mainButton.backgroundColor = UIColor.yellow
+            mainButton.setTitleColor(UIColor.black, for: UIControl.State.normal)
             status = true
             
         }
@@ -39,7 +40,8 @@ class ViewController: UIViewController {
             mainLabel.text = "반갑습니다"
             mainLabel.backgroundColor = UIColor.blue
             mainLabel.textColor = UIColor.white
-            
+            mainButton.backgroundColor = UIColor.link
+            mainButton.setTitleColor(UIColor.white, for: UIControl.State.normal)
             status = false
         }
     }
